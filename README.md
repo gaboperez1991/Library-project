@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 
 
 - https://stephen-king-api.onrender.com/api/book/19
+
+-Node Version 20.11.1
