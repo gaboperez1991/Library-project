@@ -13,9 +13,9 @@ function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
   useEffect(()=> {
     const onLocationChange = () =>{
+      
       setCurrentPath(window.location.pathname)
     }
-
     window.addEventListener(EVENTS.PUSHSTATE, onLocationChange)
     window.addEventListener(EVENTS.POPSTATE, onLocationChange)
 
@@ -24,6 +24,7 @@ function App() {
       window.removeEventListener(EVENTS.POPSTATE, onLocationChange)
     }
   }, [])
+  //console.log(currentPath)
 
   return (
     <div>
