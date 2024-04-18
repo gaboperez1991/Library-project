@@ -12,3 +12,8 @@ Currently, two official plugins are available:
 - https://stephen-king-api.onrender.com/api/book/19
 
 -Node Version 20.11.1
+
+-Crear HomePage similar a Wattpad
+-Preferencia de colores (bordo y blanco)
+-Referencia sobre nosotros en la AboutPage
+-Crear página 404
