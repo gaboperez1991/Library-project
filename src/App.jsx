@@ -23,7 +23,7 @@ function App() {
       window.removeEventListener(EVENTS.POPSTATE, onLocationChange)
     }
   }, [])
-  console.log(currentPath)
+  //console.log(currentPath)
 
   return (
     <div>
