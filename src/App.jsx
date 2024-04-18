@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { EVENTS } from './consts'
 import AboutPage from './PAGES/AboutPage'
 import HomePage from './PAGES/HomePage'
 import ReadPage from './PAGES/ReadPage'
-import { EVENTS } from './consts'
+
 
 
 
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div>
-      {currentPath === '/home' && <HomePage />}
+      {currentPath === '/' && <HomePage />}
       {currentPath === '/read' && <ReadPage />}
       {currentPath === '/about' && <AboutPage />}
     </div>

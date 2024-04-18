@@ -5,7 +5,7 @@ const ReadPage = () => {
     <div>
       <h1>ReadPage</h1>
       <p>Catalogo de libros</p>
-      <Link to='/home'>Ir a la Home</Link>
+      <Link to='/'>Ir a la Home</Link>
     </div>
   )
 }

@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div>
       <h1>AboutPage</h1>
       <p>Estamos creando una app!!</p>
-      <Link to='/home'>Ir a la Home</Link>
+      <Link to='/'>Ir a la Home</Link>
     </div>
   )
 }
