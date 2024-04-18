@@ -5,8 +5,9 @@ const AboutPage = () => {
   return (
     <div>
       <h1>AboutPage</h1>
-      <p>Estamos creando una app!!</p>
-      <Link to='/home'>Ir a la Home</Link>
+      <p>Estamos creando una app!!41ytjtyj141727271dddd</p>
+      <Link to='/'>Ir a la Home</Link>
+      <p>hoola</p>
     </div>
   )
 }
