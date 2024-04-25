@@ -1,7 +1,7 @@
 import './App.css'
 import AboutPage from './PAGES/AboutPage'
 import HomePage from './PAGES/HomePage'
-import { NotFound } from './PAGES/NotFound'
+import Page404 from './PAGES/Page404'
 import ReadPage from './PAGES/ReadPage'
 import { Router } from './PAGES/Router'
 
@@ -18,10 +18,6 @@ const appRoutes = [
   {
     path: '/readpage',
     Component: ReadPage
-  },
-  {
-    path: '/notfound',
-    Component: NotFound
   }
 ]
 
@@ -29,7 +25,7 @@ function App() {
 
   return (
     <main>
-      <Router routes={appRoutes} />
+      <Router routes={appRoutes} defaultComponent={Page404} />
     </main>
   )
 }
