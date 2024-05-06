@@ -17,3 +17,4 @@ Currently, two official plugins are available:
 -Preferencia de colores (bordo y blanco)
 -Referencia sobre nosotros en la AboutPage
 -Crear página 404
+-Axios agregado
