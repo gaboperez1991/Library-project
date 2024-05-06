@@ -1,4 +1,4 @@
-import { Link } from "../Link";
+import { Link, navigate } from "../Link";
 
 const HomePage = () => {
   return (
@@ -20,7 +20,7 @@ const HomePage = () => {
             </li>
             <li className="tags">
               <div className="div-tags">
-                <button className="button-tags">Etiquetas</button>
+                <button onClick={() => navigate('/readpage')} className="button-tags">Biblioteca</button>
               </div>
             </li>
           </ul>
