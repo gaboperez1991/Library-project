@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 
-- "https://stephen-king-api.onrender.com/api/book/19"
+- "https://openlibrary.org/search.json?q=the+lord+of+the+rings"
 
 -Node Version 20.11.1
 
