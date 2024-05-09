@@ -1,4 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Button from 'react-bootstrap/Button'
 import { Link, navigate } from "../Link";
+
 
 const HomePage = () => {
   return (
@@ -6,7 +9,7 @@ const HomePage = () => {
       <header>
         <nav className="nav-home">
           <ul className="ul-home">
-            <li className="li-home">
+            <div className="div-home">
               <h1 className="h1-home" title="LibroWeb-home">
                 LibroWeb
                 <img
@@ -17,12 +20,12 @@ const HomePage = () => {
                   alt="LibroWeb-logo"
                 />
               </h1>
-            </li>
-            <li className="tags">
+            </div>
+            <div className="tags">
               <div className="div-tags">
-                <button onClick={() => navigate('/readpage')} className="button-tags">Biblioteca</button>
+                <Button variant='primary' onClick={() => navigate('/readpage')} className="button-tags">Biblioteca</Button>
               </div>
-            </li>
+            </div>
           </ul>
         </nav>
       </header>
@@ -32,9 +35,9 @@ const HomePage = () => {
           <div className="div-portada">
             <div className="div-presentacion">
               <div>
-                <h2>Hola, somos tu librería online.</h2>
-                <h3>Explora y encuentra tus libros favoritos</h3>
-                <h4>
+                <h2 className="h2-home">Hola, somos tu librería online.</h2>
+                <h3 className="h3-home">Explora y encuentra tus libros favoritos</h3>
+                <h4 className="h4-home">
                   La lectura es un viaje maravilloso, que nos transporta a otros
                   mundos sin fin. Entre las páginas de un libro, encuentro magia
                   y devoción sin fin. Las letras saltan y bailan, mientras
@@ -66,7 +69,8 @@ const HomePage = () => {
         </div>
       </main>
       <footer className="footer-homepage">
-        <Link to="/about">Conoce sobre Nosotros</Link>
+      <Button variant='outline-primary' style={{marginTop: '10px'}}>{<Link to="/about">Conoce sobre Nosotros</Link>}</Button> 
+        
       </footer>
     </div>
   );

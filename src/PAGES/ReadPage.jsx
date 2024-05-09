@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button } from 'react-bootstrap';
 import { Link } from "../Link";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -24,7 +26,7 @@ const ReadPage = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h2>Lista de Libros El Señor de los Anillos</h2>
       {loading ? (
         <p>Cargando...</p>
@@ -35,7 +37,7 @@ const ReadPage = () => {
           ))}
         </ul>
       )}
-      <Link to="/">Ir a la Home</Link>
+      <Button variant='outline-primary' style={{marginTop:'10px'}}>{<Link to='/'>Ir a la Home</Link>}</Button>
     </div>
   );
 };

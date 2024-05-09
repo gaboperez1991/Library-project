@@ -1,9 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Button from 'react-bootstrap/Button'
 import { Link } from "../Link"
 
 const AboutPage = () => {
 
   return (
-    <>
+    <main className='container'>
    <h1>Conocenos!</h1>
       <div>
         <img
@@ -17,8 +19,8 @@ const AboutPage = () => {
           Con la ayuda de el profesional Fernando Ayala Semi-Senior en React JS estamos logrando que ésta pagina funcione.
         </p>
       </div>
-    <Link to='/'>Ir a la Home</Link>
-    </>
+      <Button variant='outline-primary' style={{marginTop:'10px'}}>{<Link to='/'>Ir a la Home</Link>}</Button>
+    </main>
   )
 }
 
