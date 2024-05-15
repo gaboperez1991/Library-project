@@ -53,7 +53,7 @@ const ReadPage = () => {
 
 
   return (
-    <div>
+    <div className='aling-middle juantify-content-center'>
       <Container style={{ backgroundColor: 'lightblue', color: 'navy', padding: '20px', marginTop: '20px'}}>
       <h1 style={{color: 'darkblue'}}>Lista de Libros El Señor de los Anillos</h1>
       {loading ? (
@@ -65,17 +65,17 @@ const ReadPage = () => {
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Título</th>
-                  <th>Año de Publicación</th>
-                  <th>Autor</th>
+                  <th className='text-center'>Título</th>
+                  <th className='text-center'>Año de Publicación</th>
+                  <th className='text-center'>Autor</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>{indexOfFirstBook + index + 1}</td>
-                  <td>{book.title}</td>
-                  <td>{book.first_publish_year}</td>
-                  <td>{book.author_name}</td>
+                  <td className='text-center'>{book.title}</td>
+                  <td className='text-center'>{book.first_publish_year}</td>
+                  <td className='text-center'>{book.author_name}</td>
                 </tr>
               </tbody>
             </Table>
