@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+    background-color: #f8f9fa;
+    color: #800000; /* Bordó */
+  }
+  
+  .container {
+    padding-top: 2rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #800000;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .button-home {
+    margin-top: 1.5rem;
+    border-color: #800000;
+    color: #800000;
+  }
+  
+  .button-home:hover {
+    background-color: #800000;
+    color: #fff;
+  }
+  

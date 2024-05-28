@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './homepage.css'
+import Button from 'react-bootstrap/Button';
 import { Link, navigate } from "../Link";
-
 
 const HomePage = () => {
   return (
@@ -16,14 +16,14 @@ const HomePage = () => {
                   className="img-home"
                   width="50"
                   height="25"
-                  src="https://cdn-icons-png.flaticon.com/512/2780/2780068.png"
+                  src="https://cdn-icons-png.flaticon.com/512/2780/2780068.png" 
                   alt="LibroWeb-logo"
                 />
               </h1>
             </div>
             <div className="tags">
               <div className="div-tags">
-                <Button variant='primary' onClick={() => navigate('/readpage')} className="button-tags">Biblioteca</Button>
+                <Button variant="light" onClick={() => navigate('/readpage')} className="button-tags">Biblioteca</Button>
               </div>
             </div>
           </ul>
@@ -69,11 +69,11 @@ const HomePage = () => {
         </div>
       </main>
       <footer className="footer-homepage">
-      <Button variant='outline-primary' style={{marginTop: '10px'}}>{<Link to="/about">Conoce sobre Nosotros</Link>}</Button> 
-        
+        <Button variant='outline-primary' style={{marginTop: '10px'}}>{<Link to="/about">Conoce sobre Nosotros</Link>}</Button> 
       </footer>
     </div>
   );
 };
 
 export default HomePage;
+
