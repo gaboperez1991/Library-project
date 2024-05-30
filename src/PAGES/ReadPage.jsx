@@ -21,7 +21,8 @@ const ReadPage = () => {
   useEffect(() => {
     axios.get('https://openlibrary.org/search.json?q=the+lord+of+the+rings')
       .then(response => {
-        const mappedBooks = response.data.docs.map(book => ({
+        const mappedBooks = response.data.docs.map((book,index)=> ({
+          key : index,
           year: book.first_publish_year,
           description: book.title, 
           author: book.author_name ? book.author_name.join(', ') : 'Desconocido'
