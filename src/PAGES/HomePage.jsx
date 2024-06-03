@@ -1,9 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './homepage.css'
+import './footer.css'
+import { Link, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import { Link, navigate } from "../Link";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="container">
       <header>
@@ -55,7 +58,6 @@ const HomePage = () => {
                   encuentro un mundo nuevo, donde puedo perderme y siempre
                   regresar.
                 </h4>
-                <p>¹Abril 2024</p>
               </div>
               <div>
                 <img
@@ -69,7 +71,14 @@ const HomePage = () => {
         </div>
       </main>
       <footer className="footer-homepage">
-        <Button variant='outline-primary' style={{marginTop: '10px'}}>{<Link to="/about">Conoce sobre Nosotros</Link>}</Button> 
+        <div>
+        <h4 className='h4-footer-homepage'>Library Project</h4>
+        <p className='p-footer-homepage'>¹Junio 2024 <br />
+           Version: 1.0.0</p>
+        </div>
+          <div className='button-container'>
+        <Button variant='outline-primary' className='footer-button'>{<Link to="/about" style={{ textDecoration: 'none', color: 'inherit'}}>Conoce Sobre Nosotros!</Link> }</Button> 
+          </div>
       </footer>
     </div>
   );
