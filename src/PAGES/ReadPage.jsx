@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./readpage.css"
+import { Link } from "react-router-dom";
 import { Button, Container, Table, Modal, Form } from "react-bootstrap";
-import { Pagination } from "react-bootstrap";
-import { Link } from "../Link";
 import axios from "axios";
+import { Pagination } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { MdAddToPhotos, MdEdit, MdOutlineDeleteForever } from "react-icons/md";
 
@@ -199,7 +199,7 @@ const ReadPage = () => {
       </Modal>
   
       <Button variant="outline-primary" style={{ marginTop: "10px" }}>
-        {<Link to="/">Ir a la Home</Link>}
+        {<Link to="/" style={{ textDecoration: 'none', color: 'inherit'}}>Ir a la Home</Link>}
       </Button>
     </div>
   );

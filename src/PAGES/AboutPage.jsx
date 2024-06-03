@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './aboutpage.css';
+import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import { Link } from "../Link";
 
 const AboutPage = () => {
   return (
@@ -21,7 +21,7 @@ const AboutPage = () => {
           Con la ayuda del profesional Fernando Ayala Semi-Senior en React JS, estamos logrando que esta página funcione.
         </p>
         <Button variant='outline-primary' className="button-home">
-          <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>Ir a la Home</Link>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Ir a la Home</Link>
         </Button>
       </div>
     </main>

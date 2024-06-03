@@ -1,0 +1,37 @@
+.footer-homepage {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c0101a1; 
+    color: aliceblue;
+    padding: 10px;
+  }
+  
+  .footer-content {
+    text-align: right;
+    margin-right: 15px;
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-button {
+    margin-top: 10px;
+  }
+  
+  .h4-footer-homepage {
+    margin: 0;
+  }
+  
+  .p-footer-homepage {
+    margin: 0;
+  }
+  
