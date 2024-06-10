@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     background-color: #fff;
     color: #800000; /* Bordó */
@@ -55,4 +55,121 @@ body {
     color: #800000;
     text-decoration: none;
   }
-  
+ 
+.container {
+  padding: 20px;
+}
+
+.nav-home {
+  background-color: #800000;
+  padding: 10px;
+}
+
+.ul-home {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-home {
+  display: flex;
+  align-items: center;
+}
+
+.h1-home {
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.img-home {
+  margin-left: 10px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+}
+
+.div-tags {
+  margin-left: 20px;
+}
+
+.button-tags {
+  font-size: 16px;
+}
+
+.div-body {
+  margin-top: 20px;
+}
+
+.div-portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.div-presentacion {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h2-home {
+  font-size: 60px;
+  margin-bottom: 35px;
+}
+
+.h3-home {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.h4-home {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  margin-bottom: 30px;
+}
+
+.carousel-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.footer-homepage {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
+
+.h4-footer-homepage {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.p-footer-homepage {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.footer-button {
+  font-size: 12px;
+}
